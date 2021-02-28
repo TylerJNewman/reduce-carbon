@@ -4,8 +4,7 @@ export default function Navbar({fixed}) {
   const [menuOpen, setMenuOpen] = React.useState(false)
   const toggleMobileMenu = () => setMenuOpen(!menuOpen)
   return (
-    <>
-      <nav className="">
+      <nav >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className=" flex items-center">
@@ -195,7 +194,6 @@ export default function Navbar({fixed}) {
             </ul>
           </div>
         </div>
-      </nav> */}
-    </>
+      </nav> 
   )
 }

@@ -159,7 +159,7 @@ export default function Index() {
             <div className="content">
               <div className="py-6 flex justify-center">
                 <img
-                  className="w-96 h-96"
+                  className="w-96"
                   style={{maxWidth: '60%'}}
                   src="/android-chrome-512x512.png"
                   alt="Logo"

@@ -1,7 +1,7 @@
 // import Head from 'next/head'
 import React from 'react'
 import Navbar from '../src/components/navbar'
-import Hero from '../src/components/Hero'
+import Hero from '../src/components/hero'
 
 export default function Index() {
   return (

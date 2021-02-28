@@ -1,8 +1,9 @@
 import React from 'react'
+import Section from './Section'
 
 const Hero = () => {
   return (
-    <div className="section pb-72 md:py-32 max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-center">
+    <Section>
       <div className="content">
         <div
           className="py-6 flex justify-center"
@@ -28,7 +29,7 @@ const Hero = () => {
           </h4>
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
 

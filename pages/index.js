@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pb-24">
         <Hero />
         <div className="py-4 text-center mx-auto sm:px-6 lg:px-8">
           <h3 className="block text-white font-bold pb-8">About</h3>

@@ -158,12 +158,13 @@ export default function Index() {
           <div className="section max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-center h-screen">
             <div className="content">
               <div className="py-6 flex justify-center">
-                <img
-                  className="w-96"
-                  style={{maxWidth: '60%'}}
-                  src="/android-chrome-512x512.png"
-                  alt="Logo"
-                />
+                <div className="w-96 h-96">
+                  <img
+                    style={{width: '60%', height: '60%', "object-fit": "cover";}}
+                    src="/android-chrome-512x512.png"
+                    alt="Logo"
+                  />
+                </div>
               </div>
               <div className="space-y-4 py-4 text-center px-6">
                 <h4 className="block text-white font-bold">

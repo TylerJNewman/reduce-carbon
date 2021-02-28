@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className="section pb-48 md:py-32 max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-center">
+    <div className="section pb-72 md:py-32 max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-center">
       <div className="content">
         <div
           className="py-6 flex justify-center"
@@ -27,7 +27,6 @@ const Hero = () => {
             Funneling the power of the meme to help the world
           </h4>
         </div>
-        <div className="h-72"></div>
       </div>
     </div>
   )

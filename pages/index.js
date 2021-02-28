@@ -160,7 +160,7 @@ export default function Index() {
               <div className="py-6 flex justify-center">
                 <div className="w-96 h-96">
                   <img
-                    style={{width: '60%', height: '60%', "object-fit": "cover";}}
+                    style={{width: '60%', height: '60%', objectFit: 'cover'}}
                     src="/android-chrome-512x512.png"
                     alt="Logo"
                   />

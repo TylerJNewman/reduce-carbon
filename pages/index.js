@@ -159,7 +159,7 @@ export default function Index() {
             <div className="content">
               <div className="py-6 flex justify-center">
                 <img
-                  className="h-96 w-96"
+                  className="w-5/6 mx-auto lg:mr-0 w-96"
                   src="/android-chrome-512x512.png"
                   alt="Logo"
                 />
@@ -174,13 +174,6 @@ export default function Index() {
           </div>
           <div className="section max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-center h-screen">
             <div className="content" style={{paddingBottom: '200px'}}>
-              {/* <div className="py-6 flex justify-center">
-                <img
-                  className="h-96 w-96"
-                  src="/android-chrome-512x512.png"
-                  alt="Logo"
-                />
-              </div> */}
               <div className="space-y-4 py-4 text-center">
                 <h1
                   className="block text-white font-bold py-24"

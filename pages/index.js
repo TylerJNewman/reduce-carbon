@@ -36,7 +36,7 @@ export default function Index() {
             {/*Right Col*/}
             <div className="w-full xl:w-3/5 mt-14 mb-48 overflow-y-hidden">
               <img
-                className="w-5/6 mx-auto lg:mr-0 slide-in-bottom max-w-prose"
+                className="w-5/6 mx-auto xl:mr-0 slide-in-bottom max-w-prose"
                 src="/diamond.png"
               />
             </div>

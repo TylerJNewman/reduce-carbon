@@ -17,7 +17,7 @@ const Ecosystem = () => {
                 <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 md:mr-1 mt-1 rounded-md bg-green-600 text-white">
                         {/* Heroicon name: outline/globe-alt */}
                         <svg
                           className="h-6 w-6"
@@ -49,7 +49,7 @@ const Ecosystem = () => {
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 md:mr-1 mt-1 rounded-md bg-green-600 text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -78,7 +78,7 @@ const Ecosystem = () => {
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 md:mr-1 mt-1 rounded-md bg-green-600 text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -109,7 +109,7 @@ const Ecosystem = () => {
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 md:mr-1 mt-1 rounded-md bg-green-600 text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"

@@ -2,16 +2,16 @@ import React from 'react'
 import Section from './Section'
 import {useScroll} from './scroll-context'
 
-const Features = () => {
-  const {featuresRef} = useScroll()
+const Ecosystem = () => {
+  const {ecoRef} = useScroll()
   return (
     <>
-      <Section forwardedRef={featuresRef}>
+      <Section forwardedRef={ecoRef}>
         <div className="py-4  mx-auto sm:px-6 lg:px-8">
           <h3 className="block text-center text-white font-bold py-8 md:pb-24">
             Ecosystem
           </h3>
-          <div className="py-12">
+          <div className="">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="mt-10">
                 <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
@@ -148,4 +148,4 @@ const Features = () => {
   )
 }
 
-export default Features
+export default Ecosystem

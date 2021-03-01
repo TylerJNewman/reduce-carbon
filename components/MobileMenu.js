@@ -2,7 +2,7 @@ import React from 'react'
 import {useScroll} from './scroll-context'
 
 const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
-  const {handleAbout, handleHow} = useScroll()
+  const {handleAbout, handleHow, handleEco} = useScroll()
 
   const handleAboutClick = (e) => {
     toggleMobileMenu()
@@ -12,6 +12,11 @@ const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
   const handleHowClick = (e) => {
     toggleMobileMenu()
     setTimeout(() => handleHow(e), 200)
+  }
+
+  const handleEcoClick = (e) => {
+    toggleMobileMenu()
+    setTimeout(() => handleEco(e), 200)
   }
 
   return (
@@ -42,6 +47,13 @@ const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
           className="text-white hover:bg-green-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           How it Works
+        </a>
+        <a
+          onClick={handleEcoClick}
+          href="#"
+          className="text-white hover:bg-green-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          Ecosystem
         </a>
         <a
           href="#"

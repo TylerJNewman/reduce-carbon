@@ -8,6 +8,12 @@ function ScrollProvider({children}) {
     aboutRef.current?.scrollIntoView({behavior: 'smooth'})
   }
 
+  const ecoRef = React.useRef()
+  function handleEco(e) {
+    e.preventDefault()
+    ecoRef.current?.scrollIntoView({behavior: 'smooth'})
+  }
+
   const heroRef = React.useRef()
   function handleHero(e) {
     e.preventDefault()
@@ -19,7 +25,16 @@ function ScrollProvider({children}) {
     e.preventDefault()
     howRef.current?.scrollIntoView({behavior: 'smooth'})
   }
-  const value = {aboutRef, handleAbout, heroRef, handleHero, howRef, handleHow}
+  const value = {
+    ecoRef,
+    handleEco,
+    aboutRef,
+    handleAbout,
+    heroRef,
+    handleHero,
+    howRef,
+    handleHow,
+  }
 
   return (
     <ScrollContext.Provider value={value}>{children}</ScrollContext.Provider>

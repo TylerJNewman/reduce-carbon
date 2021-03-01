@@ -10,11 +10,11 @@ const About = () => {
         <h3 className="block text-white font-bold py-8">About</h3>
         <div className="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="mb-32 space-y-4 flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-            <h6 className=" md:text-2xl text-white font-bold leading-tight text-center md:text-left">
+            <h6 className="md:text-2xl text-white font-bold leading-tight text-center md:text-left">
               Reduce Carbon Club turns carbon into diamonds and profits while
               helping the environment.
             </h6>
-            <p className=" text-white leading-normal text-base md:text-2xl text-center md:text-left">
+            <p className="text-white leading-normal text-base md:text-2xl text-center md:text-left">
               Saving the world is hard. The size and scale of the climate crisis
               demands a level of collaboration that was never before possible. 
             </p>

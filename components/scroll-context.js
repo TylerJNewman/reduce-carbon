@@ -3,12 +3,14 @@ const ScrollContext = React.createContext()
 
 function ScrollProvider({children}) {
   const aboutRef = React.useRef()
-  function handleAbout() {
+  function handleAbout(e) {
+    e.preventDefault()
     aboutRef.current?.scrollIntoView({behavior: 'smooth'})
   }
 
   const heroRef = React.useRef()
   function handleHero() {
+    e.preventDefault()
     heroRef.current?.scrollIntoView({behavior: 'smooth'})
   }
 

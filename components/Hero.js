@@ -1,9 +1,11 @@
 import React from 'react'
 import Section from './Section'
+import {useScroll} from './scroll-context'
 
 const Hero = () => {
+  const {heroRef} = useScroll()
   return (
-    <Section>
+    <Section ref={heroRef} name="hero">
       <div className="content">
         <div
           className="py-6 flex justify-center"

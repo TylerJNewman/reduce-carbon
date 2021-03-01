@@ -8,11 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.4",
     "next": "latest",
+    "postcss": "^8.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
+    "react-scroll-into-view": "^1.8.2",
     "tailwindcss": "^2.0.2"
   }
 }

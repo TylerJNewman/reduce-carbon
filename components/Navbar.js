@@ -1,12 +1,15 @@
 import React from 'react'
+import {useScroll} from './scroll-context'
+const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
+  const {handleAbout} = useScroll()
 
-const MobileMenu = ({menuOpen}) => {
   return (
-    <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden`}>
+    <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`}>
       <div className="px-4 pt-2 pb-3 space-y-1 sm:px-3">
         <a
+          onClick={() => toggleMobileMenu && setTimeout(() => handleAbout())}
           href="#"
-          className="bg-green-800 text-white block px-3 py-2 rounded-md text-base font-medium"
+          className="text-white hover:bg-green-700 block px-3 py-2 rounded-md text-base font-medium"
         >
           About
         </a>
@@ -40,8 +43,9 @@ const MobileMenu = ({menuOpen}) => {
 }
 
 const MobileMenuButton = ({menuOpen, toggleMobileMenu}) => {
+  const {handleAbout} = useScroll()
   return (
-    <div className="flex lg:hidden">
+    <div className="flex md:hidden">
       <button
         onClick={toggleMobileMenu}
         type="button"
@@ -96,16 +100,18 @@ const MobileMenuButton = ({menuOpen, toggleMobileMenu}) => {
 }
 
 const NavbarMenuItems = () => {
+  const {handleAbout} = useScroll()
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <div className="ml-10 flex items-baseline space-x-4">
-          <a
+          <div
+            onClick={handleAbout}
             href="#"
             className="text-white  hover:text-green-700 px-3 py-2 rounded-md text-md font-medium"
           >
             About
-          </a>
+          </div>
           <a
             href="#"
             className="text-white  hover:text-green-700 px-3 py-2 rounded-md text-md font-medium"
@@ -141,7 +147,7 @@ const Logo = () => {
   )
 }
 
-export default function Navbar() {
+export default function Navbar({handleAbout}) {
   const [menuOpen, setMenuOpen] = React.useState(false)
   const toggleMobileMenu = () => setMenuOpen(!menuOpen)
   return (
@@ -149,16 +155,21 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <Logo />
-          <NavbarMenuItems />
+          <NavbarMenuItems handleAbout={handleAbout} />
 
           <MobileMenuButton
+            handleAbout={handleAbout}
             menuOpen={menuOpen}
             toggleMobileMenu={toggleMobileMenu}
           />
         </div>
       </div>
 
-      <MobileMenu menuOpen={menuOpen} />
+      <MobileMenu
+        menuOpen={menuOpen}
+        handleAbout={handleAbout}
+        toggleMobileMenu={toggleMobileMenu}
+      />
     </nav>
   )
 }

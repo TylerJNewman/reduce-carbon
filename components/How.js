@@ -5,8 +5,8 @@ const How = () => {
   const {howRef} = useScroll()
 
   return (
-    <Section forwardedRef={howRef} style={{marginTop: '-100px'}}>
-      <div className="py-4 text-center mx-auto sm:px-6 lg:px-8">
+    <Section forwardedRef={howRef}>
+      <div className="py-4 text-center mx-auto sm:px-6 lg:px-8 -mt-16">
         <h3 className="block text-white font-bold py-8 md:pb-24">
           How It Works
         </h3>

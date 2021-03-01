@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <Section forwardedRef={aboutRef}>
-      <div className="py-4 text-center mx-auto sm:px-6 lg:px-8">
+      <div className=" text-center mx-auto sm:px-6 lg:px-8">
         <h3 className="block text-white font-bold py-8 md:pb-24">About</h3>
         <div className="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="mb-32 space-y-4 flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">

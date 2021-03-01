@@ -4,14 +4,14 @@ import {useScroll} from './scroll-context'
 const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
   const {handleAbout} = useScroll()
 
-  const handleAboutClick = () => {
+  const handleAboutClick = (e) => {
     toggleMobileMenu()
-    setTimeout(() => handleAbout(), 200)
+    setTimeout(() => handleAbout(e), 200)
   }
 
-  const handleWhatClick = () => {
+  const handleWhatClick = (e) => {
     toggleMobileMenu()
-    setTimeout(() => handleWhat(), 200)
+    setTimeout(() => handleWhat(e), 200)
   }
 
   return (

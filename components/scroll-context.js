@@ -9,7 +9,7 @@ function ScrollProvider({children}) {
   }
 
   const heroRef = React.useRef()
-  function handleHero() {
+  function handleHero(e) {
     e.preventDefault()
     heroRef.current?.scrollIntoView({behavior: 'smooth'})
   }

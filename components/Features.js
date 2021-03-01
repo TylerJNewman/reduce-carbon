@@ -38,9 +38,9 @@ const Features = () => {
                     </div>
                     <div className="ml-4">
                       <dt className="text-lg leading-6 font-medium text-white">
-                        Decentralized
+                        <h6>Decentralized</h6>
                       </dt>
-                      <dd className="mt-2 text-base text-white">
+                      <dd className="mt-2 text-base md:text-2xl text-white ">
                         💎🤲 DAO is fully decentralised, there is no one main
                         owner of the token. All decisions are made in the
                         communities favor.
@@ -68,9 +68,9 @@ const Features = () => {
                     </div>
                     <div className="ml-4">
                       <dt className="text-lg leading-6 font-medium text-white">
-                        Burn Rate
+                        <h6>Burn Rate</h6>
                       </dt>
-                      <dd className="mt-2 text-base text-white">
+                      <dd className="mt-2 text-base md:text-2xl text-white">
                         Each transaction triggers a burn rate of 1%, which
                         decreases the supply of DMND overtime.
                       </dd>
@@ -99,9 +99,9 @@ const Features = () => {
                     </div>
                     <div className="ml-4">
                       <dt className="text-lg leading-6 font-medium text-white">
-                        Rewards
+                        <h6>Rewards</h6>
                       </dt>
-                      <dd className="mt-2 text-base text-white">
+                      <dd className="mt-2 text-base md:text-2xl text-white">
                         💎🤲 DAO rewards its holders with a 1% tax on each
                         transaction to punish weak hands.
                       </dd>
@@ -129,9 +129,9 @@ const Features = () => {
                     </div>
                     <div className="ml-4">
                       <dt className="text-lg leading-6 font-medium text-white">
-                        Further Development
+                        <h6>Further Development</h6>
                       </dt>
-                      <dd className="mt-2 text-base text-white">
+                      <dd className="mt-2 text-base md:text-2xl text-white">
                         💎🤲 DAO is planned to advance further into the crypto
                         space by releasing innovative products which will ensure
                         the sustainability of the token.

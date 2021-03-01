@@ -2,7 +2,6 @@ import React from 'react'
 import MobileMenuButton from './MobileMenuButton'
 import MobileMenu from './MobileMenu'
 import NavbarMenuItems from './NavbarMenuItems'
-import {useScroll} from './scroll-context'
 
 const Logo = () => {
   return (

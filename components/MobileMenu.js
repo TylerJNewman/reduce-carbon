@@ -2,16 +2,16 @@ import React from 'react'
 import {useScroll} from './scroll-context'
 
 const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
-  const {handleAbout} = useScroll()
+  const {handleAbout, handleHow} = useScroll()
 
   const handleAboutClick = (e) => {
     toggleMobileMenu()
     setTimeout(() => handleAbout(e), 200)
   }
 
-  const handleWhatClick = (e) => {
+  const handleHowClick = (e) => {
     toggleMobileMenu()
-    setTimeout(() => handleWhat(e), 200)
+    setTimeout(() => handleHow(e), 200)
   }
 
   return (
@@ -24,7 +24,7 @@ const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
         >
           About
         </a>
-        <a
+        {/* <a
           href="#"
           className="text-white hover:bg-green-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
@@ -35,12 +35,13 @@ const MobileMenu = ({menuOpen, toggleMobileMenu}) => {
           className="text-white hover:bg-green-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           Why
-        </a>
+        </a> */}
         <a
+          onClick={handleHowClick}
           href="#"
           className="text-white hover:bg-green-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
-          How
+          How it Works
         </a>
         <a
           href="#"

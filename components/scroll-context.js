@@ -14,7 +14,12 @@ function ScrollProvider({children}) {
     heroRef.current?.scrollIntoView({behavior: 'smooth'})
   }
 
-  const value = {aboutRef, handleAbout, heroRef, handleHero}
+  const howRef = React.useRef()
+  function handleHow(e) {
+    e.preventDefault()
+    howRef.current?.scrollIntoView({behavior: 'smooth'})
+  }
+  const value = {aboutRef, handleAbout, heroRef, handleHero, howRef, handleHow}
 
   return (
     <ScrollContext.Provider value={value}>{children}</ScrollContext.Provider>

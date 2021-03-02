@@ -120,11 +120,10 @@ export default function ContactForm() {
       ) : null} */}
       <>
         <Section forwardedRef={contactRef}>
-          <div class="bg-white rounded-md">
+          <div class="bg-white rounded-md mx-4 sm:mx-6 lg:mx-8">
             <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
               <h4 class="font-bold text-gray-900  ">
-                Want more?
-                <br class="hidden sm:inline" />
+                Want more? <br class="hidden sm:inline" />
                 <span class="text-green-600">We will send you updates</span>
               </h4>
               <form

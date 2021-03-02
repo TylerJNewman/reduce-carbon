@@ -5,7 +5,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import How from '../components/How'
 import Ecosystem from '../components/Ecosystem'
-// import Contact from '../components/Contact'
+import Contact from '../components/Contact'
 import {ScrollProvider} from '../components/scroll-context'
 
 export default function Index() {
@@ -17,7 +17,7 @@ export default function Index() {
         <About />
         <How />
         <Ecosystem />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </ScrollProvider>
   )

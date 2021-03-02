@@ -1,7 +1,7 @@
 import {useScroll} from './scroll-context'
 
 const NavbarMenuItems = () => {
-  const {handleAbout, handleHow, handleEco} = useScroll()
+  const {handleAbout, handleHow, handleEco, handleContact} = useScroll()
   return (
     <>
       <div className="hidden md:block">
@@ -39,7 +39,10 @@ const NavbarMenuItems = () => {
           >
             Ecosystem
           </a>
-          <button className="bg-transparent hover:bg-green-600  font-semibold text-white py-2 px-4 border border-white hover:border-transparent rounded">
+          <button
+            onClick={handleContact}
+            className="bg-transparent hover:bg-green-600  font-semibold text-white py-2 px-4 border border-white hover:border-transparent rounded"
+          >
             Contact
           </button>
         </div>

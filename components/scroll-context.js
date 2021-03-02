@@ -25,6 +25,13 @@ function ScrollProvider({children}) {
     e.preventDefault()
     howRef.current?.scrollIntoView({behavior: 'smooth'})
   }
+
+  const contactRef = React.useRef()
+  function handleContact(e) {
+    e.preventDefault()
+    contactRef.current?.scrollIntoView({behavior: 'smooth'})
+  }
+
   const value = {
     ecoRef,
     handleEco,
@@ -34,6 +41,8 @@ function ScrollProvider({children}) {
     handleHero,
     howRef,
     handleHow,
+    contactRef,
+    handleContact,
   }
 
   return (

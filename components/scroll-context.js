@@ -14,11 +14,11 @@ function ScrollProvider({children}) {
     ecoRef.current?.scrollIntoView({behavior: 'smooth'})
   }
 
-  const heroRef = React.useRef()
-  function handleHero(e) {
-    e.preventDefault()
-    heroRef.current?.scrollIntoView({behavior: 'smooth'})
-  }
+  // const heroRef = React.useRef()
+  // function handleHero(e) {
+  //   e.preventDefault()
+  //   heroRef.current?.scrollIntoView({behavior: 'smooth'})
+  // }
 
   const howRef = React.useRef()
   function handleHow(e) {
@@ -37,8 +37,6 @@ function ScrollProvider({children}) {
     handleEco,
     aboutRef,
     handleAbout,
-    heroRef,
-    handleHero,
     howRef,
     handleHow,
     contactRef,

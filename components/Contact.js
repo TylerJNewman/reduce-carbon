@@ -17,7 +17,7 @@ export default function ContactForm() {
   const [success, setSuccess] = useState(false)
   const [pending, setPending] = useState(false)
   // const [open, setOpen] = useState(false) // Snackbar
-  // const classes = useFormStyles()
+  // const classNamees = useFormStyles()
 
   // useEffect(() => {
   //   if (error) setOpen(true)
@@ -73,7 +73,7 @@ export default function ContactForm() {
   //   const severity = error ? 'error' : 'success'
   //   return (
   //     <Alert severity={severity}>
-  //       <div className={classes.snackbarMessage} />
+  //       <div classNameName={classNamees.snackbarMessage} />
   //       {error && 'Something went wrong :('}
   //       {success && 'Success!  You will hear from us soon :)'}
   //     </Alert>
@@ -88,7 +88,7 @@ export default function ContactForm() {
           if (data.email === '') return
           submitSendgrid(data.email)
         })}
-        className={classes.root}
+        classNameName={classNamees.root}
       >
         <TextField
           inputRef={register}
@@ -120,14 +120,14 @@ export default function ContactForm() {
       ) : null} */}
       <>
         <Section forwardedRef={contactRef}>
-          <div class="bg-white rounded-md mx-4 sm:mx-6 lg:mx-8">
-            <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-              <h4 class="font-bold text-gray-900  ">
-                Want more? <br class="hidden sm:inline" />
-                <span class="text-green-600">We will send you updates</span>
+          <div className="bg-white rounded-md mx-4 sm:mx-6 lg:mx-8">
+            <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+              <h4 className="font-bold text-gray-900  ">
+                Want more? <br className="hidden sm:inline" />
+                <span className="text-green-600">We will send you updates</span>
               </h4>
               <form
-                class="mt-8 sm:flex"
+                className="mt-8 sm:flex"
                 onSubmit={handleSubmit((data) => {
                   if (data.email === '') return
                   submitSendgrid(data.email)
@@ -145,11 +145,11 @@ export default function ContactForm() {
                   aria-label="Email address"
                   type="email"
                   required
-                  class="appearance-none w-full px-5 py-3 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:max-w-xs"
+                  className="appearance-none w-full px-5 py-3 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out sm:max-w-xs"
                   placeholder="Enter your email"
                 />
-                <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                  <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                     Send
                     <div className="ml-2">
                       <svg
@@ -159,10 +159,10 @@ export default function ContactForm() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-send"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="feather feather-send"
                       >
                         <line x1="22" y1="2" x2="11" y2="13"></line>
                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>

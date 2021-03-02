@@ -6,7 +6,7 @@ const How = () => {
 
   return (
     <Section forwardedRef={howRef}>
-      <div className="py-4 text-center mx-auto sm:px-6 lg:px-8 -mt-16">
+      <div className="py-4 text-center mx-auto sm:px-6 lg:px-8">
         <h3 className="block text-white font-bold py-8 md:pb-24">
           How It Works
         </h3>
@@ -36,7 +36,7 @@ const How = () => {
             </div>
           </div>
           {/*Right Col*/}
-          <div className="w-full xl:w-3/5 mt-14 mb-48 overflow-y-hidden">
+          <div className="w-full xl:w-3/5 my-14 md:mb-48 overflow-y-hidden">
             <img
               className="w-5/6 mx-auto xl:mr-0 slide-in-bottom max-w-prose"
               src="/diamond.png"

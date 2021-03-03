@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Section from './Section'
 import {useScroll} from './scroll-context'
+import {toast} from 'react-toastify'
 
 // import useTimeout from 'common/hooks/useTimeout'
 // import TextField from '@material-ui/core/TextField'
@@ -11,6 +12,7 @@ import {useForm} from 'react-hook-form'
 // import Alert from '@material-ui/lab/Alert'
 
 export default function ContactForm() {
+  const notify = () => toast('💎🤲 Success: We will be in touch!')
   const {contactRef} = useScroll()
 
   const [error, setError] = useState(false)
@@ -55,6 +57,7 @@ export default function ContactForm() {
     if (data.job_id) {
       setPending(false)
       setSuccess(true)
+      notify()
     } else if (data.errors.length) {
       setPending(false)
       setError(true)

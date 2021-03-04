@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-4 py-4 text-center px-6">
+        <div className="space-y-4 py-4 text-center px-6 md:mt-8">
           <h4 className="block text-white font-bold">
             Funneling the power of the meme to help the world
           </h4>

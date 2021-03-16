@@ -43,7 +43,7 @@ export default function ContactForm() {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
         },
         method: 'PUT',
         body: JSON.stringify({
